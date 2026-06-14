@@ -56,6 +56,4 @@ wheels/
 .installed.cfg
 *.egg
 
-# Claude/Gemini local development config
-.claude/
-.gemini/
+
