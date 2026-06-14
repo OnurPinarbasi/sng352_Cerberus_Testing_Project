@@ -29,10 +29,10 @@ matched = True and not isinstance(value, type_definition.excluded_types)
 
 Implementation artifact:
 
-- Folder: `faults/implemented_mutations/F1-1/`
-- Patch: `faults/implemented_mutations/F1-1/mutation.patch`
-- Original fragment: `faults/implemented_mutations/F1-1/original.py`
-- Mutated fragment: `faults/implemented_mutations/F1-1/mutated.py`
+- Folder: `faults/F1-1/`
+- Patch: `faults/F1-1/mutation.patch`
+- Original fragment: `faults/F1-1/original.py`
+- Mutated fragment: `faults/F1-1/mutated.py`
 
 **Fault class:** Literal Insertion Fault (LIF)
 
@@ -70,10 +70,10 @@ matched = isinstance(
 
 Implementation artifact:
 
-- Folder: `faults/implemented_mutations/F1-2/`
-- Patch: `faults/implemented_mutations/F1-2/mutation.patch`
-- Original fragment: `faults/implemented_mutations/F1-2/original.py`
-- Mutated fragment: `faults/implemented_mutations/F1-2/mutated.py`
+- Folder: `faults/F1-2/`
+- Patch: `faults/F1-2/mutation.patch`
+- Original fragment: `faults/F1-2/original.py`
+- Mutated fragment: `faults/F1-2/mutated.py`
 
 **Fault class:** Literal Insertion Fault (LIF)
 
@@ -117,10 +117,10 @@ else:
 
 Implementation artifact:
 
-- Folder: `faults/implemented_mutations/F1-3/`
-- Patch: `faults/implemented_mutations/F1-3/mutation.patch`
-- Original fragment: `faults/implemented_mutations/F1-3/original.py`
-- Mutated fragment: `faults/implemented_mutations/F1-3/mutated.py`
+- Folder: `faults/F1-3/`
+- Patch: `faults/F1-3/mutation.patch`
+- Original fragment: `faults/F1-3/original.py`
+- Mutated fragment: `faults/F1-3/mutated.py`
 
 **Fault class:** Term Omission Fault (TOF)
 
@@ -158,10 +158,10 @@ if True and len(value) < min_length:
 
 Implementation artifact:
 
-- Folder: `faults/implemented_mutations/F1-4/`
-- Patch: `faults/implemented_mutations/F1-4/mutation.patch`
-- Original fragment: `faults/implemented_mutations/F1-4/original.py`
-- Mutated fragment: `faults/implemented_mutations/F1-4/mutated.py`
+- Folder: `faults/F1-4/`
+- Patch: `faults/F1-4/mutation.patch`
+- Original fragment: `faults/F1-4/original.py`
+- Mutated fragment: `faults/F1-4/mutated.py`
 
 **Fault class:** Literal Insertion Fault (LIF)
 
@@ -200,10 +200,10 @@ if isinstance(dependency_values, Sequence) or isinstance(
 
 Implementation artifact:
 
-- Folder: `faults/implemented_mutations/F1-5/`
-- Patch: `faults/implemented_mutations/F1-5/mutation.patch`
-- Original fragment: `faults/implemented_mutations/F1-5/original.py`
-- Mutated fragment: `faults/implemented_mutations/F1-5/mutated.py`
+- Folder: `faults/F1-5/`
+- Patch: `faults/F1-5/mutation.patch`
+- Original fragment: `faults/F1-5/original.py`
+- Mutated fragment: `faults/F1-5/mutated.py`
 
 **Fault class:** Literal Negation Fault (LNF)
 
@@ -244,10 +244,10 @@ any scalar value → unexpected error. Assertion catches the changed outcome.
 
 Implementation artifact:
 
-- Folder: `faults/implemented_mutations/F2-1/`
-- Patch: `faults/implemented_mutations/F2-1/mutation.patch`
-- Original fragment: `faults/implemented_mutations/F2-1/original.py`
-- Mutated fragment: `faults/implemented_mutations/F2-1/mutated.py`
+- Folder: `faults/F2-1/`
+- Patch: `faults/F2-1/mutation.patch`
+- Original fragment: `faults/F2-1/original.py`
+- Mutated fragment: `faults/F2-1/mutated.py`
 
 **Fault class:** Literal Negation Fault (LNF)
 
@@ -287,10 +287,10 @@ Assertion `assert v.validate({'x': None}) is True` is killed.
 
 Implementation artifact:
 
-- Folder: `faults/implemented_mutations/F2-2/`
-- Patch: `faults/implemented_mutations/F2-2/mutation.patch`
-- Original fragment: `faults/implemented_mutations/F2-2/original.py`
-- Mutated fragment: `faults/implemented_mutations/F2-2/mutated.py`
+- Folder: `faults/F2-2/`
+- Patch: `faults/F2-2/mutation.patch`
+- Original fragment: `faults/F2-2/original.py`
+- Mutated fragment: `faults/F2-2/mutated.py`
 
 **Fault class:** Literal Insertion Fault (LIF)
 
@@ -329,10 +329,10 @@ is killed.
 
 Implementation artifact:
 
-- Folder: `faults/implemented_mutations/F2-3/`
-- Patch: `faults/implemented_mutations/F2-3/mutation.patch`
-- Original fragment: `faults/implemented_mutations/F2-3/original.py`
-- Mutated fragment: `faults/implemented_mutations/F2-3/mutated.py`
+- Folder: `faults/F2-3/`
+- Patch: `faults/F2-3/mutation.patch`
+- Original fragment: `faults/F2-3/original.py`
+- Mutated fragment: `faults/F2-3/mutated.py`
 
 **Fault class:** Term Omission Fault (TOF)
 
@@ -369,10 +369,10 @@ regardless → required check skipped → `True`. Assertion killed.
 
 Implementation artifact:
 
-- Folder: `faults/implemented_mutations/F2-4/`
-- Patch: `faults/implemented_mutations/F2-4/mutation.patch`
-- Original fragment: `faults/implemented_mutations/F2-4/original.py`
-- Mutated fragment: `faults/implemented_mutations/F2-4/mutated.py`
+- Folder: `faults/F2-4/`
+- Patch: `faults/F2-4/mutation.patch`
+- Original fragment: `faults/F2-4/original.py`
+- Mutated fragment: `faults/F2-4/mutated.py`
 
 **Fault class:** Literal Insertion Fault (LIF)
 
@@ -407,10 +407,10 @@ alone → rules dropped (silencing the error) → `True`. Assertion killed.
 
 Implementation artifact:
 
-- Folder: `faults/implemented_mutations/F2-5/`
-- Patch: `faults/implemented_mutations/F2-5/mutation.patch`
-- Original fragment: `faults/implemented_mutations/F2-5/original.py`
-- Mutated fragment: `faults/implemented_mutations/F2-5/mutated.py`
+- Folder: `faults/F2-5/`
+- Patch: `faults/F2-5/mutation.patch`
+- Original fragment: `faults/F2-5/original.py`
+- Mutated fragment: `faults/F2-5/mutated.py`
 
 **Fault class:** Literal Replacement Fault (LRF)
 
@@ -446,10 +446,10 @@ is True` (maxlength=5) is killed by the mutation.
 
 Implementation artifact:
 
-- Folder: `faults/implemented_mutations/F3-1/`
-- Patch: `faults/implemented_mutations/F3-1/mutation.patch`
-- Original fragment: `faults/implemented_mutations/F3-1/original.py`
-- Mutated fragment: `faults/implemented_mutations/F3-1/mutated.py`
+- Folder: `faults/F3-1/`
+- Patch: `faults/F3-1/mutation.patch`
+- Original fragment: `faults/F3-1/original.py`
+- Mutated fragment: `faults/F3-1/mutated.py`
 
 **Fault class:** Literal Insertion Fault (LIF)
 
@@ -486,10 +486,10 @@ would call `len(42)` → `TypeError` → validation error → `False` where `Tru
 
 Implementation artifact:
 
-- Folder: `faults/implemented_mutations/F3-2/`
-- Patch: `faults/implemented_mutations/F3-2/mutation.patch`
-- Original fragment: `faults/implemented_mutations/F3-2/original.py`
-- Mutated fragment: `faults/implemented_mutations/F3-2/mutated.py`
+- Folder: `faults/F3-2/`
+- Patch: `faults/F3-2/mutation.patch`
+- Original fragment: `faults/F3-2/original.py`
+- Mutated fragment: `faults/F3-2/mutated.py`
 
 **Fault class:** Literal Negation Fault (LNF)
 
@@ -531,10 +531,10 @@ element which is itself a list, not a field name → unexpected behaviour / erro
 
 Implementation artifact:
 
-- Folder: `faults/implemented_mutations/F3-3/`
-- Patch: `faults/implemented_mutations/F3-3/mutation.patch`
-- Original fragment: `faults/implemented_mutations/F3-3/original.py`
-- Mutated fragment: `faults/implemented_mutations/F3-3/mutated.py`
+- Folder: `faults/F3-3/`
+- Patch: `faults/F3-3/mutation.patch`
+- Original fragment: `faults/F3-3/original.py`
+- Mutated fragment: `faults/F3-3/mutated.py`
 
 **Fault class:** Literal Insertion Fault (LIF)
 
@@ -583,10 +583,10 @@ killed.
 
 Implementation artifact:
 
-- Folder: `faults/implemented_mutations/F3-4/`
-- Patch: `faults/implemented_mutations/F3-4/mutation.patch`
-- Original fragment: `faults/implemented_mutations/F3-4/original.py`
-- Mutated fragment: `faults/implemented_mutations/F3-4/mutated.py`
+- Folder: `faults/F3-4/`
+- Patch: `faults/F3-4/mutation.patch`
+- Original fragment: `faults/F3-4/original.py`
+- Mutated fragment: `faults/F3-4/mutated.py`
 
 **Fault class:** Term Omission Fault (TOF)
 
@@ -621,10 +621,10 @@ integers, lists, etc. → `TypeError`. This is TOF: the entire guard term is omi
 
 Implementation artifact:
 
-- Folder: `faults/implemented_mutations/F3-5/`
-- Patch: `faults/implemented_mutations/F3-5/mutation.patch`
-- Original fragment: `faults/implemented_mutations/F3-5/original.py`
-- Mutated fragment: `faults/implemented_mutations/F3-5/mutated.py`
+- Folder: `faults/F3-5/`
+- Patch: `faults/F3-5/mutation.patch`
+- Original fragment: `faults/F3-5/original.py`
+- Mutated fragment: `faults/F3-5/mutated.py`
 
 **Fault class:** Expression Negation Fault (ENF)
 
@@ -672,10 +672,10 @@ assertions are killed.
 
 Implementation artifact:
 
-- Folder: `faults/implemented_mutations/F4-1/`
-- Patch: `faults/implemented_mutations/F4-1/mutation.patch`
-- Original fragment: `faults/implemented_mutations/F4-1/original.py`
-- Mutated fragment: `faults/implemented_mutations/F4-1/mutated.py`
+- Folder: `faults/F4-1/`
+- Patch: `faults/F4-1/mutation.patch`
+- Original fragment: `faults/F4-1/original.py`
+- Mutated fragment: `faults/F4-1/mutated.py`
 
 **Fault class:** Term Omission Fault (TOF)
 
@@ -717,10 +717,10 @@ in the forbidden list.
 
 Implementation artifact:
 
-- Folder: `faults/implemented_mutations/F4-2/`
-- Patch: `faults/implemented_mutations/F4-2/mutation.patch`
-- Original fragment: `faults/implemented_mutations/F4-2/original.py`
-- Mutated fragment: `faults/implemented_mutations/F4-2/mutated.py`
+- Folder: `faults/F4-2/`
+- Patch: `faults/F4-2/mutation.patch`
+- Original fragment: `faults/F4-2/original.py`
+- Mutated fragment: `faults/F4-2/mutated.py`
 
 **Fault class:** Literal Negation Fault (LNF)
 
@@ -763,10 +763,10 @@ Mapping) = False → no validation at all → `True`. Assertion killed.
 
 Implementation artifact:
 
-- Folder: `faults/implemented_mutations/F4-3/`
-- Patch: `faults/implemented_mutations/F4-3/mutation.patch`
-- Original fragment: `faults/implemented_mutations/F4-3/original.py`
-- Mutated fragment: `faults/implemented_mutations/F4-3/mutated.py`
+- Folder: `faults/F4-3/`
+- Patch: `faults/F4-3/mutation.patch`
+- Original fragment: `faults/F4-3/original.py`
+- Mutated fragment: `faults/F4-3/mutated.py`
 
 **Fault class:** Literal Negation Fault (LNF)
 
@@ -803,10 +803,10 @@ condition True → `set((['a','b'],))` = `{('a','b')}` → `('a','b') not in val
 
 Implementation artifact:
 
-- Folder: `faults/implemented_mutations/F4-4/`
-- Patch: `faults/implemented_mutations/F4-4/mutation.patch`
-- Original fragment: `faults/implemented_mutations/F4-4/original.py`
-- Mutated fragment: `faults/implemented_mutations/F4-4/mutated.py`
+- Folder: `faults/F4-4/`
+- Patch: `faults/F4-4/mutation.patch`
+- Original fragment: `faults/F4-4/original.py`
+- Mutated fragment: `faults/F4-4/mutated.py`
 
 **Fault class:** Literal Insertion Fault (LIF)
 
@@ -844,10 +844,10 @@ different error but still `False`. A better revealing case: validate `{'x': 5}` 
 
 Implementation artifact:
 
-- Folder: `faults/implemented_mutations/F4-5/`
-- Patch: `faults/implemented_mutations/F4-5/mutation.patch`
-- Original fragment: `faults/implemented_mutations/F4-5/original.py`
-- Mutated fragment: `faults/implemented_mutations/F4-5/mutated.py`
+- Folder: `faults/F4-5/`
+- Patch: `faults/F4-5/mutation.patch`
+- Original fragment: `faults/F4-5/original.py`
+- Mutated fragment: `faults/F4-5/mutated.py`
 
 **Fault class:** Literal Replacement Fault (LRF)
 
@@ -887,10 +887,10 @@ items error → child validates → `True`. Mutation: `2 == 2` → True → ITEM
 
 Implementation artifact:
 
-- Folder: `faults/implemented_mutations/F1-6/`
-- Patch: `faults/implemented_mutations/F1-6/mutation.patch`
-- Original fragment: `faults/implemented_mutations/F1-6/original.py`
-- Mutated fragment: `faults/implemented_mutations/F1-6/mutated.py`
+- Folder: `faults/F1-6/`
+- Patch: `faults/F1-6/mutation.patch`
+- Original fragment: `faults/F1-6/original.py`
+- Mutated fragment: `faults/F1-6/mutated.py`
 
 **Fault class:** Literal Deletion Fault (LDF)
 
@@ -924,10 +924,10 @@ Assertion `assert v.validate({'x': [1,2,3]}) is True` is killed.
 
 Implementation artifact:
 
-- Folder: `faults/implemented_mutations/F1-7/`
-- Patch: `faults/implemented_mutations/F1-7/mutation.patch`
-- Original fragment: `faults/implemented_mutations/F1-7/original.py`
-- Mutated fragment: `faults/implemented_mutations/F1-7/mutated.py`
+- Folder: `faults/F1-7/`
+- Patch: `faults/F1-7/mutation.patch`
+- Original fragment: `faults/F1-7/original.py`
+- Mutated fragment: `faults/F1-7/mutated.py`
 
 **Fault class:** Literal Replacement Fault (LRF)
 
@@ -960,10 +960,10 @@ Mutation: `3 <= 3` → True → error → `False`. Assertion is killed.
 
 Implementation artifact:
 
-- Folder: `faults/implemented_mutations/F1-8/`
-- Patch: `faults/implemented_mutations/F1-8/mutation.patch`
-- Original fragment: `faults/implemented_mutations/F1-8/original.py`
-- Mutated fragment: `faults/implemented_mutations/F1-8/mutated.py`
+- Folder: `faults/F1-8/`
+- Patch: `faults/F1-8/mutation.patch`
+- Original fragment: `faults/F1-8/original.py`
+- Mutated fragment: `faults/F1-8/mutated.py`
 
 **Fault class:** Term Negation Fault (TNF)
 
@@ -997,10 +997,10 @@ exact complement of the original behaviour. This is TNF: the whole implicant is 
 
 Implementation artifact:
 
-- Folder: `faults/implemented_mutations/F1-9/`
-- Patch: `faults/implemented_mutations/F1-9/mutation.patch`
-- Original fragment: `faults/implemented_mutations/F1-9/original.py`
-- Mutated fragment: `faults/implemented_mutations/F1-9/mutated.py`
+- Folder: `faults/F1-9/`
+- Patch: `faults/F1-9/mutation.patch`
+- Original fragment: `faults/F1-9/original.py`
+- Mutated fragment: `faults/F1-9/mutated.py`
 
 **Fault class:** Term Insertion Fault (TIF)
 
@@ -1039,10 +1039,10 @@ Assertion killed.
 
 Implementation artifact:
 
-- Folder: `faults/implemented_mutations/F1-10/`
-- Patch: `faults/implemented_mutations/F1-10/mutation.patch`
-- Original fragment: `faults/implemented_mutations/F1-10/original.py`
-- Mutated fragment: `faults/implemented_mutations/F1-10/mutated.py`
+- Folder: `faults/F1-10/`
+- Patch: `faults/F1-10/mutation.patch`
+- Original fragment: `faults/F1-10/original.py`
+- Mutated fragment: `faults/F1-10/mutated.py`
 
 **Fault class:** OR-to-AND Fault (ORF+)
 
@@ -1079,10 +1079,10 @@ raw → `wanted_field_value in 1` → `TypeError` → error → `False`. Asserti
 
 Implementation artifact:
 
-- Folder: `faults/implemented_mutations/F1-11/`
-- Patch: `faults/implemented_mutations/F1-11/mutation.patch`
-- Original fragment: `faults/implemented_mutations/F1-11/original.py`
-- Mutated fragment: `faults/implemented_mutations/F1-11/mutated.py`
+- Folder: `faults/F1-11/`
+- Patch: `faults/F1-11/mutation.patch`
+- Original fragment: `faults/F1-11/original.py`
+- Mutated fragment: `faults/F1-11/mutated.py`
 
 **Fault class:** AND-to-OR Fault (ORF\*)
 
@@ -1127,10 +1127,10 @@ the gate.
 
 Implementation artifact:
 
-- Folder: `faults/implemented_mutations/F1-12/`
-- Patch: `faults/implemented_mutations/F1-12/mutation.patch`
-- Original fragment: `faults/implemented_mutations/F1-12/original.py`
-- Mutated fragment: `faults/implemented_mutations/F1-12/mutated.py`
+- Folder: `faults/F1-12/`
+- Patch: `faults/F1-12/mutation.patch`
+- Original fragment: `faults/F1-12/original.py`
+- Mutated fragment: `faults/F1-12/mutated.py`
 
 **Fault class:** Expression Negation Fault (ENF)
 
@@ -1167,10 +1167,10 @@ This is ENF: the complete governing boolean expression is negated.
 
 Implementation artifact:
 
-- Folder: `faults/implemented_mutations/F2-6/`
-- Patch: `faults/implemented_mutations/F2-6/mutation.patch`
-- Original fragment: `faults/implemented_mutations/F2-6/original.py`
-- Mutated fragment: `faults/implemented_mutations/F2-6/mutated.py`
+- Folder: `faults/F2-6/`
+- Patch: `faults/F2-6/mutation.patch`
+- Original fragment: `faults/F2-6/original.py`
+- Mutated fragment: `faults/F2-6/mutated.py`
 
 **Fault class:** Literal Deletion Fault (LDF)
 
@@ -1202,10 +1202,10 @@ one literal removed from an implicant.
 
 Implementation artifact:
 
-- Folder: `faults/implemented_mutations/F2-7/`
-- Patch: `faults/implemented_mutations/F2-7/mutation.patch`
-- Original fragment: `faults/implemented_mutations/F2-7/original.py`
-- Mutated fragment: `faults/implemented_mutations/F2-7/mutated.py`
+- Folder: `faults/F2-7/`
+- Patch: `faults/F2-7/mutation.patch`
+- Original fragment: `faults/F2-7/original.py`
+- Mutated fragment: `faults/F2-7/mutated.py`
 
 **Fault class:** Term Negation Fault (TNF)
 
@@ -1238,10 +1238,10 @@ Mutation: `False ∨ True` (`2 <= 5`) = True → error → `False`. Killed.
 
 Implementation artifact:
 
-- Folder: `faults/implemented_mutations/F2-8/`
-- Patch: `faults/implemented_mutations/F2-8/mutation.patch`
-- Original fragment: `faults/implemented_mutations/F2-8/original.py`
-- Mutated fragment: `faults/implemented_mutations/F2-8/mutated.py`
+- Folder: `faults/F2-8/`
+- Patch: `faults/F2-8/mutation.patch`
+- Original fragment: `faults/F2-8/original.py`
+- Mutated fragment: `faults/F2-8/mutated.py`
 
 **Fault class:** Term Insertion Fault (TIF)
 
@@ -1282,10 +1282,10 @@ Equivalent to ¬A∧¬B.
 
 Implementation artifact:
 
-- Folder: `faults/implemented_mutations/F2-9/`
-- Patch: `faults/implemented_mutations/F2-9/mutation.patch`
-- Original fragment: `faults/implemented_mutations/F2-9/original.py`
-- Mutated fragment: `faults/implemented_mutations/F2-9/mutated.py`
+- Folder: `faults/F2-9/`
+- Patch: `faults/F2-9/mutation.patch`
+- Original fragment: `faults/F2-9/original.py`
+- Mutated fragment: `faults/F2-9/mutated.py`
 
 **Fault class:** OR-to-AND Fault (ORF+)
 
@@ -1324,10 +1324,10 @@ Assertion `assert v.validate({'x':'not_a_number'}) is False` killed.
 
 Implementation artifact:
 
-- Folder: `faults/implemented_mutations/F2-10/`
-- Patch: `faults/implemented_mutations/F2-10/mutation.patch`
-- Original fragment: `faults/implemented_mutations/F2-10/original.py`
-- Mutated fragment: `faults/implemented_mutations/F2-10/mutated.py`
+- Folder: `faults/F2-10/`
+- Patch: `faults/F2-10/mutation.patch`
+- Original fragment: `faults/F2-10/original.py`
+- Mutated fragment: `faults/F2-10/mutated.py`
 
 **Fault class:** AND-to-OR Fault (ORF\*)
 
@@ -1363,10 +1363,10 @@ y exempted → missing required field undetected → `True`. Assertion killed.
 
 Implementation artifact:
 
-- Folder: `faults/implemented_mutations/F2-11/`
-- Patch: `faults/implemented_mutations/F2-11/mutation.patch`
-- Original fragment: `faults/implemented_mutations/F2-11/original.py`
-- Mutated fragment: `faults/implemented_mutations/F2-11/mutated.py`
+- Folder: `faults/F2-11/`
+- Patch: `faults/F2-11/mutation.patch`
+- Original fragment: `faults/F2-11/original.py`
+- Mutated fragment: `faults/F2-11/mutated.py`
 
 **Fault class:** Expression Negation Fault (ENF)
 
@@ -1398,10 +1398,10 @@ error → `True`. Mutation: `not False` = True → error → `False`. Assertion 
 
 Implementation artifact:
 
-- Folder: `faults/implemented_mutations/F3-6/`
-- Patch: `faults/implemented_mutations/F3-6/mutation.patch`
-- Original fragment: `faults/implemented_mutations/F3-6/original.py`
-- Mutated fragment: `faults/implemented_mutations/F3-6/mutated.py`
+- Folder: `faults/F3-6/`
+- Patch: `faults/F3-6/mutation.patch`
+- Original fragment: `faults/F3-6/original.py`
+- Mutated fragment: `faults/F3-6/mutated.py`
 
 **Fault class:** Literal Deletion Fault (LDF)
 
@@ -1431,10 +1431,10 @@ error → `True`. Mutation: `isinstance([1,2],Sized)` = True → error → `Fals
 
 Implementation artifact:
 
-- Folder: `faults/implemented_mutations/F3-7/`
-- Patch: `faults/implemented_mutations/F3-7/mutation.patch`
-- Original fragment: `faults/implemented_mutations/F3-7/original.py`
-- Mutated fragment: `faults/implemented_mutations/F3-7/mutated.py`
+- Folder: `faults/F3-7/`
+- Patch: `faults/F3-7/mutation.patch`
+- Original fragment: `faults/F3-7/original.py`
+- Mutated fragment: `faults/F3-7/mutated.py`
 
 **Fault class:** Literal Replacement Fault (LRF)
 
@@ -1465,10 +1465,10 @@ Mutation: `len([42])==1` = True → error → `False`. Killed.
 
 Implementation artifact:
 
-- Folder: `faults/implemented_mutations/F3-8/`
-- Patch: `faults/implemented_mutations/F3-8/mutation.patch`
-- Original fragment: `faults/implemented_mutations/F3-8/original.py`
-- Mutated fragment: `faults/implemented_mutations/F3-8/mutated.py`
+- Folder: `faults/F3-8/`
+- Patch: `faults/F3-8/mutation.patch`
+- Original fragment: `faults/F3-8/original.py`
+- Mutated fragment: `faults/F3-8/mutated.py`
 
 **Fault class:** Term Negation Fault (TNF)
 
@@ -1507,10 +1507,10 @@ Killed.
 
 Implementation artifact:
 
-- Folder: `faults/implemented_mutations/F3-9/`
-- Patch: `faults/implemented_mutations/F3-9/mutation.patch`
-- Original fragment: `faults/implemented_mutations/F3-9/original.py`
-- Mutated fragment: `faults/implemented_mutations/F3-9/mutated.py`
+- Folder: `faults/F3-9/`
+- Patch: `faults/F3-9/mutation.patch`
+- Original fragment: `faults/F3-9/original.py`
+- Mutated fragment: `faults/F3-9/mutated.py`
 
 **Fault class:** Term Insertion Fault (TIF)
 
@@ -1551,10 +1551,10 @@ With guard removed and extra term present: `not isinstance(123,str)` = True → 
 
 Implementation artifact:
 
-- Folder: `faults/implemented_mutations/F3-10/`
-- Patch: `faults/implemented_mutations/F3-10/mutation.patch`
-- Original fragment: `faults/implemented_mutations/F3-10/original.py`
-- Mutated fragment: `faults/implemented_mutations/F3-10/mutated.py`
+- Folder: `faults/F3-10/`
+- Patch: `faults/F3-10/mutation.patch`
+- Original fragment: `faults/F3-10/original.py`
+- Mutated fragment: `faults/F3-10/mutated.py`
 
 **Fault class:** OR-to-AND Fault (ORF+)
 
@@ -1593,10 +1593,10 @@ guard, B=`re_obj.match(value)` succeeds.)
 
 Implementation artifact:
 
-- Folder: `faults/implemented_mutations/F3-11/`
-- Patch: `faults/implemented_mutations/F3-11/mutation.patch`
-- Original fragment: `faults/implemented_mutations/F3-11/original.py`
-- Mutated fragment: `faults/implemented_mutations/F3-11/mutated.py`
+- Folder: `faults/F3-11/`
+- Patch: `faults/F3-11/mutation.patch`
+- Original fragment: `faults/F3-11/original.py`
+- Mutated fragment: `faults/F3-11/mutated.py`
 
 **Fault class:** AND-to-OR Fault (ORF\*)
 
@@ -1632,10 +1632,10 @@ pattern. This is ORF\*: AND replaced by OR.
 
 Implementation artifact:
 
-- Folder: `faults/implemented_mutations/F4-6/`
-- Patch: `faults/implemented_mutations/F4-6/mutation.patch`
-- Original fragment: `faults/implemented_mutations/F4-6/original.py`
-- Mutated fragment: `faults/implemented_mutations/F4-6/mutated.py`
+- Folder: `faults/F4-6/`
+- Patch: `faults/F4-6/mutation.patch`
+- Original fragment: `faults/F4-6/original.py`
+- Mutated fragment: `faults/F4-6/mutated.py`
 
 **Fault class:** Literal Deletion Fault (LDF)
 
@@ -1672,10 +1672,10 @@ Equivalent to: `field not in schema or 'coerce' not in schema.get(field, {})` (�
 
 Implementation artifact:
 
-- Folder: `faults/implemented_mutations/F4-7/`
-- Patch: `faults/implemented_mutations/F4-7/mutation.patch`
-- Original fragment: `faults/implemented_mutations/F4-7/original.py`
-- Mutated fragment: `faults/implemented_mutations/F4-7/mutated.py`
+- Folder: `faults/F4-7/`
+- Patch: `faults/F4-7/mutation.patch`
+- Original fragment: `faults/F4-7/original.py`
+- Mutated fragment: `faults/F4-7/mutated.py`
 
 **Fault class:** Term Negation Fault (TNF)
 
@@ -1711,10 +1711,10 @@ A∧B = True → coerce applied → `int('5')=5` → type check passes → `True
 
 Implementation artifact:
 
-- Folder: `faults/implemented_mutations/F4-8/`
-- Patch: `faults/implemented_mutations/F4-8/mutation.patch`
-- Original fragment: `faults/implemented_mutations/F4-8/original.py`
-- Mutated fragment: `faults/implemented_mutations/F4-8/mutated.py`
+- Folder: `faults/F4-8/`
+- Patch: `faults/F4-8/mutation.patch`
+- Original fragment: `faults/F4-8/original.py`
+- Mutated fragment: `faults/F4-8/mutated.py`
 
 **Fault class:** Term Insertion Fault (TIF)
 
@@ -1755,10 +1755,10 @@ list branch → `set(5)` → `TypeError` → error → `False`. Killed.
 
 Implementation artifact:
 
-- Folder: `faults/implemented_mutations/F4-9/`
-- Patch: `faults/implemented_mutations/F4-9/mutation.patch`
-- Original fragment: `faults/implemented_mutations/F4-9/original.py`
-- Mutated fragment: `faults/implemented_mutations/F4-9/mutated.py`
+- Folder: `faults/F4-9/`
+- Patch: `faults/F4-9/mutation.patch`
+- Original fragment: `faults/F4-9/original.py`
+- Mutated fragment: `faults/F4-9/mutated.py`
 
 **Fault class:** OR-to-AND Fault (ORF+)
 
@@ -1791,10 +1791,10 @@ OR=True → `{'abc'}` → `'abc' in ['abc']` → True → `True`. Mutation: `¬A
 
 Implementation artifact:
 
-- Folder: `faults/implemented_mutations/F4-10/`
-- Patch: `faults/implemented_mutations/F4-10/mutation.patch`
-- Original fragment: `faults/implemented_mutations/F4-10/original.py`
-- Mutated fragment: `faults/implemented_mutations/F4-10/mutated.py`
+- Folder: `faults/F4-10/`
+- Patch: `faults/F4-10/mutation.patch`
+- Original fragment: `faults/F4-10/original.py`
+- Mutated fragment: `faults/F4-10/mutated.py`
 
 **Fault class:** AND-to-OR Fault (ORF\*)
 
@@ -1837,10 +1837,10 @@ string) → `False∨True` = True → integers enter the list-iteration branch �
 
 Implementation artifact:
 
-- Folder: `faults/implemented_mutations/F4-11/`
-- Patch: `faults/implemented_mutations/F4-11/mutation.patch`
-- Original fragment: `faults/implemented_mutations/F4-11/original.py`
-- Mutated fragment: `faults/implemented_mutations/F4-11/mutated.py`
+- Folder: `faults/F4-11/`
+- Patch: `faults/F4-11/mutation.patch`
+- Original fragment: `faults/F4-11/original.py`
+- Mutated fragment: `faults/F4-11/mutated.py`
 
 **Fault class:** Expression Negation Fault (ENF)
 
