@@ -1,0 +1,17 @@
+--- a/cerberus/validator.py
++++ b/cerberus/validator.py
+@@ -1248,10 +1248,7 @@
+             self._unrequired_by_excludes.add(field)
+ 
+         for excluded_field in excluded_fields:
+-            if excluded_field in self.schema and self.schema[field].get(
+-                'required', self.require_all
+-            ):
+-                self._unrequired_by_excludes.add(excluded_field)
++            if excluded_field in self.schema or self.schema[field].get(
+                'required', self.require_all
+            ):
+                self._unrequired_by_excludes.add(excluded_field)
+ 
+         if any(excluded_field in self.document for excluded_field in excluded_fields):
+             exclusion_str = ', '.join(

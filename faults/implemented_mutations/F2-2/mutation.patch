@@ -1,0 +1,17 @@
+--- a/cerberus/validator.py
++++ b/cerberus/validator.py
+@@ -761,10 +761,7 @@
+ 
+         try:
+             return processor(value)
+-        except Exception as e:
+-            if not (nullable and value is None):
+-                self._error(field, error, str(e))
+-            return value
++        except Exception as e:
+            if not (True and value is None):
+                self._error(field, error, str(e))
+            return value
+ 
+     def __normalize_containers(self, mapping, schema):
+         for field in mapping:

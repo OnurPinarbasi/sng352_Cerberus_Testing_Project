@@ -1,0 +1,13 @@
+--- a/cerberus/validator.py
++++ b/cerberus/validator.py
+@@ -1365,8 +1365,7 @@
+ 
+     def _validate_minlength(self, min_length, field, value):
+         """{'type': 'integer'}"""
+-        if isinstance(value, Iterable) and len(value) < min_length:
+-            self._error(field, errors.MIN_LENGTH, len(value))
++        if isinstance(value, Iterable) or len(value) < min_length:
+            self._error(field, errors.MIN_LENGTH, len(value))
+ 
+     def _validate_nullable(self, nullable, field, value):
+         """{'type': 'boolean'}"""

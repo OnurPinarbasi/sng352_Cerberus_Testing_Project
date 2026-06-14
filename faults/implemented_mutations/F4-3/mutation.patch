@@ -1,0 +1,21 @@
+--- a/cerberus/validator.py
++++ b/cerberus/validator.py
+@@ -1168,12 +1168,7 @@
+         if not isinstance(value, Iterable):
+             return
+ 
+-        if not isinstance(expected_values, Iterable) or isinstance(
+-            expected_values, _str_type
+-        ):
+-            expected_values = set((expected_values,))
+-        else:
+-            expected_values = set(expected_values)
++        if isinstance(expected_values, Iterable) or isinstance(
+            expected_values, _str_type
+        ):
+            expected_values = set((expected_values,))
+        else:
+            expected_values = set(expected_values)
+ 
+         missing_values = expected_values - set(value)
+         if missing_values:

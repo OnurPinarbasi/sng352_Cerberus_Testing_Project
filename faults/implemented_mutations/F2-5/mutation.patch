@@ -1,0 +1,13 @@
+--- a/cerberus/validator.py
++++ b/cerberus/validator.py
+@@ -1358,8 +1358,7 @@
+ 
+     def _validate_maxlength(self, max_length, field, value):
+         """{'type': 'integer'}"""
+-        if isinstance(value, Iterable) and len(value) > max_length:
+-            self._error(field, errors.MAX_LENGTH, len(value))
++        if isinstance(value, Iterable) and len(value) >= max_length:
+            self._error(field, errors.MAX_LENGTH, len(value))
+ 
+     _validate_meta = dummy_for_rule_validation('')
+ 

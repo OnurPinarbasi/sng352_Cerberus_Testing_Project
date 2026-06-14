@@ -1,0 +1,1 @@
+if isinstance(value, Sequence) or not isinstance(value, _str_type):

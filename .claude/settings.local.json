@@ -1,0 +1,9 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(gh api *)",
+      "PowerShell(gh api repos/OnurPinarbasi/CerberusTesting/git/trees/HEAD?recursive=1 2>&1)",
+      "WebFetch(domain:raw.githubusercontent.com)"
+    ]
+  }
+}

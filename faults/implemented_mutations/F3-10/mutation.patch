@@ -1,0 +1,17 @@
+--- a/cerberus/validator.py
++++ b/cerberus/validator.py
+@@ -1181,10 +1181,7 @@
+ 
+     def _validate_dependencies(self, dependencies, field, value):
+         """{'type': ('dict', 'hashable', 'list'), 'check_with': 'dependencies'}"""
+-        if isinstance(dependencies, _str_type) or not isinstance(
+-            dependencies, (Iterable, Mapping)
+-        ):
+-            dependencies = (dependencies,)
++        if isinstance(dependencies, _str_type) and not isinstance(
+            dependencies, (Iterable, Mapping)
+        ):
+            dependencies = (dependencies,)
+ 
+         if isinstance(dependencies, Sequence):
+             self.__validate_dependencies_sequence(dependencies, field)

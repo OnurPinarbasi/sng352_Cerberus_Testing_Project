@@ -1,0 +1,13 @@
+--- a/cerberus/validator.py
++++ b/cerberus/validator.py
+@@ -1423,8 +1423,7 @@
+                     self.document_path + (field,)
+                 )
+             )
+-            if self._is_normalized and has_error:
+-                self._drop_remaining_rules()
++            if has_error:
+                self._drop_remaining_rules()
+ 
+     def _validate_regex(self, pattern, field, value):
+         """{'type': 'string'}"""

@@ -1,0 +1,11 @@
+--- a/cerberus/validator.py
++++ b/cerberus/validator.py
+@@ -1224,7 +1224,7 @@
+ 
+     def _validate_empty(self, empty, field, value):
+         """{'type': 'boolean'}"""
+-        if isinstance(value, Sized) and len(value) == 0:
++        if True and len(value) == 0:
+             self._drop_remaining_rules(
+                 'allowed',
+                 'forbidden',

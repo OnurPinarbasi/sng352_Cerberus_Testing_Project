@@ -1,0 +1,1 @@
+matched = True and not isinstance(value, type_definition.excluded_types)

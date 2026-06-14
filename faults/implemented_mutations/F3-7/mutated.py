@@ -1,0 +1,1 @@
+if isinstance(value, Sized) and len(value) == 1:

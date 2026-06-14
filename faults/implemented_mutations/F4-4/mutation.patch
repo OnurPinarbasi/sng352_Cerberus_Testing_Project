@@ -1,0 +1,13 @@
+--- a/cerberus/validator.py
++++ b/cerberus/validator.py
+@@ -722,8 +722,7 @@
+ 
+         error = errors.COERCION_FAILED
+         for field in mapping:
+-            if field in schema and 'coerce' in schema[field]:
+-                mapping[field] = self.__normalize_coerce(
++            if field in schema and True:
+                mapping[field] = self.__normalize_coerce(
+                     schema[field]['coerce'],
+                     field,
+                     mapping[field],

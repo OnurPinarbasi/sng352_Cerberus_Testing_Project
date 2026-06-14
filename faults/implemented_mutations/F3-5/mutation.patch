@@ -1,0 +1,13 @@
+--- a/cerberus/validator.py
++++ b/cerberus/validator.py
+@@ -1433,8 +1433,7 @@
+         if not pattern.endswith('$'):
+             pattern += '$'
+         re_obj = re.compile(pattern)
+-        if not re_obj.match(value):
+-            self._error(field, errors.REGEX_MISMATCH)
++        if re_obj.match(value):
+            self._error(field, errors.REGEX_MISMATCH)
+ 
+     _validate_required = dummy_for_rule_validation(""" {'type': 'boolean'} """)
+ 

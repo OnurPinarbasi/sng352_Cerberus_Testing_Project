@@ -1,0 +1,23 @@
+--- a/cerberus/validator.py
++++ b/cerberus/validator.py
+@@ -1127,13 +1127,7 @@
+ 
+     def _validate_allowed(self, allowed_values, field, value):
+         """{'type': 'container'}"""
+-        if isinstance(value, Iterable) and not isinstance(value, _str_type):
+-            unallowed = tuple(x for x in value if x not in allowed_values)
+-            if unallowed:
+-                self._error(field, errors.UNALLOWED_VALUES, unallowed)
+-        else:
+-            if value not in allowed_values:
+-                self._error(field, errors.UNALLOWED_VALUE, value)
++        if not (isinstance(value, Iterable) and not isinstance(value, _str_type)):
+            unallowed = tuple(x for x in value if x not in allowed_values)
+            if unallowed:
+                self._error(field, errors.UNALLOWED_VALUES, unallowed)
+        else:
+            if value not in allowed_values:
+                self._error(field, errors.UNALLOWED_VALUE, value)
+ 
+     def _validate_check_with(self, checks, field, value):
+         """

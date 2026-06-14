@@ -1,0 +1,17 @@
+--- a/cerberus/validator.py
++++ b/cerberus/validator.py
+@@ -1203,10 +1203,7 @@
+         validated_dependencies_counter = 0
+         error_info = {}
+         for dependency_name, dependency_values in dependencies.items():
+-            if not isinstance(dependency_values, Sequence) or isinstance(
+-                dependency_values, _str_type
+-            ):
+-                dependency_values = [dependency_values]
++            if isinstance(dependency_values, Sequence) or isinstance(
+                dependency_values, _str_type
+            ):
+                dependency_values = [dependency_values]
+ 
+             wanted_field, wanted_field_value = self._lookup_field(dependency_name)
+             if wanted_field_value in dependency_values:

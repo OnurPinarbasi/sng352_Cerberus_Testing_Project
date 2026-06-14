@@ -1,0 +1,14 @@
+--- a/cerberus/validator.py
++++ b/cerberus/validator.py
+@@ -1127,8 +1127,7 @@
+ 
+     def _validate_allowed(self, allowed_values, field, value):
+         """{'type': 'container'}"""
+-        if isinstance(value, Iterable) and not isinstance(value, _str_type):
+-            unallowed = tuple(x for x in value if x not in allowed_values)
++        if (isinstance(value, Iterable) and not isinstance(value, _str_type)
+                or isinstance(value, int)):
+            unallowed = tuple(x for x in value if x not in allowed_values)
+             if unallowed:
+                 self._error(field, errors.UNALLOWED_VALUES, unallowed)
+         else:
