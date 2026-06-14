@@ -1,42 +1,54 @@
 # Cerberus Software Testing Project
 
-Bu proje, Python veri doğrulama kütüphanesi **Cerberus**'un güvenlik ve doğruluğunu sınamak amacıyla geliştirilmiş bir yazılım test projesidir. 
+This project is a software testing project developed to test the security and accuracy of the Python data validation library **Cerberus**. 
 
-Projede formal test tasarımı yöntemlerinden **MUMCUT (Kriter 8.30)** analiz yöntemi ve **DNF Hata Sınıfları (Table 8.1)** kullanılmıştır.
+In the project, the **MUMCUT** analysis method and **DNF Error Classes** were used from formal test design methods.
+
+| Fault Class | Description |
+|------------|-------------|
+| **ENF** (Expression Negation Fault) | Entire expression is mistakenly negated. |
+| **TNF** (Term Negation Fault) | A whole term is mistakenly negated. |
+| **TOF** (Term Omission Fault) | A term is accidentally removed. |
+| **LNF** (Literal Negation Fault) | A literal is mistakenly negated. |
+| **LRF** (Literal Reference Fault) | A literal is replaced by another literal. |
+| **LOF** (Literal Omission Fault) | A literal is accidentally removed from a term. |
+| **LIF** (Literal Insertion Fault) | An extra literal is added to a term. |
+| **ORF+** (Operator Reference Fault) | An OR operator is incorrectly changed to AND. |
+| **ORF*** (Operator Reference Fault) | An AND operator is incorrectly changed to OR. |
 
 ---
 
-## 1. Proje Hakkında Genel Bilgiler
+## 1. General Information About the Project
 
-* **Hedef Sistem:** Cerberus doğrulama kütüphanesinin `validator.py` dosyasındaki 20 kritik fonksiyon test edilmiştir.
-* **Ekip Çalışması:** 4 takım üyesi, sistemden tamamen benzersiz 5'er fonksiyon (toplamda 20 fonksiyon) seçerek detaylı $\LaTeX$ analizleri ve doğruluk tabloları oluşturmuştur.
-* **Test Süiti:** Her üye en az 20 adet ünite testi yazarak toplamda **105 testlik** güçlü bir test süiti oluşturmuştur.
-* **Hata Emülasyonu (Mutation Testing):** Kod tabanına Table 8.1 hata sınıflarını (LIF, LNF, TOF vb.) simüle eden **45 mantıksal mutasyon** (yapay hata) yerleştirilmiştir. Bu sayede testlerin hataları yakalama (öldürme) yeteneği ölçülmüştür.
+* **Target System:** 20 critical functions in the `validator.py` file of the Cerberus validation library were tested.
+* **Teamwork:** 4 team members selected 5 completely unique functions from the system (20 functions in total) and created detailed $\LaTeX$ analyses and accuracy tables.
+* **Test Suite:** Each member wrote at least 20 unit tests, creating a robust test suite with **105 tests in total**.
+* **Error Emulation (Mutation Testing):** Add the Table 8.1 error classes (LIF, LNF, TOF, etc.) to the code base.) simulating **45 logical mutations** (artificial error) have been placed. In this way, the ability of the tests to catch (kill) errors was measured.
 
 ---
 
-## 2. Çalıştırma Komutları
+## 2. Execution Commands
 
-Terminalde projenin ana dizinindeyken aşağıdaki komutları kullanabilirsiniz:
+While in the project's root directory in the terminal, you can use the following commands:
 
-### 2.1. Ünite Testlerini Çalıştırmak İçin
-Yazılan tüm temiz testleri koşturmak ve testlerin geçtiğini doğrulamak için:
+### 2.1. To Run Unit Tests
+To run all written clean tests and verify that they pass:
 ```bash
 pytest tests/ -v
 ```
 
-### 2.2. Mutasyon (Hata) Testlerini Çalıştırmak İçin
-Yazılan mantıksal hataların (mutantların) testler tarafından yakalanıp yakalanmadığını (öldürülüp öldürülmediğini) otomatik olarak test etmek için:
+### 2.2. For Running Mutation (Mutation) Tests
+To automatically test whether the written logical errors (mutants) are caught (or killed) by the tests:
 ```bash
 python faults/run_mutants.py
 ```
-*(Bu komut, 45 mutasyonu sırasıyla koda uygulayıp testleri koşacak ve en sonunda hangilerinin başarıyla yakalandığını terminalde tablo şeklinde gösterecektir).*
+*(This command will apply the 45 mutations sequentially to the code, run the tests, and finally display in a table format in the terminal which ones were successfully detected).*
 
 ---
 
-## 3. Klasör Yapısı
+## 3. Folder Structure
 
-* **`cerberus/`**: Test edilen hedef kütüphanenin kaynak kodları.
-* **`tests/`**: Grup üyeleri tarafından yazılan ünite testleri (`member1`, `member2`, `member3`, `member4`).
-* **`faults/`**: Manuel oluşturulan mantıksal hata dosyaları (mutantlar) ve otomatik çalıştırıcı betik (`run_mutants.py`).
-* **`report/`**: Matematiksel türetimlerin, doğruluk tablolarının ve analizlerin yer aldığı proje teslim raporu (`report.md`).
+* **`cerberus/`**: The source code of the target library being tested.
+* **`tests/`**: Unit tests written by group members. (`Ahmet Kerem Ince (member1)`, `Berrak Yildirim (member2)`, `Onur Pinarbasi (member3)`, `Zeynep Orman (member4)`).
+* **`faults/`**: Manually created logical error files (mutants) and an autorunner script. (`run_mutants.py`).
+* **`report/`**: Project delivery report including mathematical derivations, truth tables and analyses. (`report.md`).

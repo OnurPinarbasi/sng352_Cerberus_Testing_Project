@@ -31,7 +31,7 @@ def load_mutants(index_path):
     return mutants
 
 def apply_mutation(target_file, clean_code_lines, clean_target_lines, m_id, func_name, orig_content, mut_content):
-    orig_lines = [l for l in orig_content.splitlines() if l.strip()]
+    orig_lines = [l for l in orig_content.splitlines() if l.strip() and not l.strip().startswith("#")]
     clean_orig = [l.strip() for l in orig_lines]
     
     # Find the function definition
@@ -63,9 +63,9 @@ def apply_mutation(target_file, clean_code_lines, clean_target_lines, m_id, func
         
     # Indent mutated code appropriately
     target_indentation = get_leading_whitespace(clean_code_lines[match_idx])
-    mutated_lines = mut_content.splitlines()
+    mutated_lines = [l for l in mut_content.splitlines() if not l.strip().startswith("#")]
     if not mutated_lines:
-        return False, "mutated.py is empty"
+        return False, "mutated.py is empty after stripping comments"
         
     first_mutated_indent = get_leading_whitespace(mutated_lines[0])
     
