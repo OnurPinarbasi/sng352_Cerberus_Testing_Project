@@ -27,22 +27,60 @@ In the project, the **MUMCUT** analysis method and **DNF Error Classes** were us
 
 ---
 
-## 2. Execution Commands
+## 2. Step-by-Step Setup and Execution Guide
 
-While in the project's root directory in the terminal, you can use the following commands:
+Follow these steps to set up the environment and run the tests from scratch:
 
-### 2.1. To Run Unit Tests
-To run all written clean tests and verify that they pass:
+### Step 2.1: Prerequisites
+Ensure you have the following installed on your machine:
+*   **Python**: Version 3.8 or higher.
+*   **Git**: To clone the repository.
+
+### Step 2.2: Clone the Repository
+Clone the project repository and navigate into the root directory:
+```bash
+git clone git@github.com:OnurPinarbasi/sng352_Cerberus_Testing_Project.git
+cd sng352_Cerberus_Testing_Project
+```
+*(Alternatively, you can clone via HTTPS: `git clone https://github.com/OnurPinarbasi/sng352_Cerberus_Testing_Project.git`)*
+
+### Step 2.3: Create and Activate a Virtual Environment (Recommended)
+Set up a clean virtual environment to avoid package dependency conflicts:
+*   **On macOS and Linux:**
+    ```bash
+    python3 -m venv .venv
+    source .venv/bin/activate
+    ```
+*   **On Windows (CMD or PowerShell):**
+    ```cmd
+    python -m venv .venv
+    .venv\Scripts\activate
+    ```
+
+### Step 2.4: Install Dependencies
+Install the required testing framework, `pytest`. No other packages are needed as the `cerberus` module being tested is bundled locally inside the project:
+```bash
+pip install pytest
+```
+
+### Step 2.5: Run Clean Unit Tests
+Verify that all 105 clean unit tests written by our team members pass on the original codebase:
 ```bash
 pytest tests/ -v
 ```
 
-### 2.2. For Running Mutation (Mutation) Tests
-To automatically test whether the written logical errors (mutants) are caught (or killed) by the tests:
+### Step 2.6: Run the Mutation Testing Suite
+Execute the automated mutation testing runner to apply the 45 logical mutants sequentially and test whether our suite catches (kills) them:
 ```bash
 python faults/run_mutants.py
 ```
-*(This command will apply the 45 mutations sequentially to the code, run the tests, and finally display in a table format in the terminal which ones were successfully detected).*
+*Note: This script automatically backs up `cerberus/validator.py`, applies each mutant in isolation, runs the targeted killing test, restores the clean code, and generates a summary table of **KILLED** and **SURVIVED** mutants.*
+
+### Step 2.7: Run a Specific Mutant Individually
+To execute and test a single mutant (e.g., `F1-1`) in isolation:
+```bash
+python faults/run_mutants.py F1-1
+```
 
 ---
 

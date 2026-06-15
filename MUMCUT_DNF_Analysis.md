@@ -1390,3 +1390,60 @@ This section was intentionally condensed to avoid repeating the same six-step de
 for all 40 member × fault-class combinations.
 
 ---
+
+## 5. Build and Run Instructions
+
+This section provides the exact step-by-step instructions to compile, configure, and execute the tests and mutation runner from scratch on any machine.
+
+### 5.1. Prerequisites
+Ensure you have the following software installed:
+*   **Python**: Version 3.8 or higher.
+*   **Git**: To clone the repository.
+
+### 5.2. Cloning the Repository
+Clone the project repository and navigate into the root directory:
+```bash
+git clone git@github.com:OnurPinarbasi/sng352_Cerberus_Testing_Project.git
+cd sng352_Cerberus_Testing_Project
+```
+*(Alternatively, clone via HTTPS: `git clone https://github.com/OnurPinarbasi/sng352_Cerberus_Testing_Project.git`)*
+
+### 5.3. Creating a Virtual Environment (Recommended)
+Creating an isolated environment guarantees no dependency conflicts with your system packages:
+*   **On macOS and Linux:**
+    ```bash
+    python3 -m venv .venv
+    source .venv/bin/activate
+    ```
+*   **On Windows (CMD or PowerShell):**
+    ```cmd
+    python -m venv .venv
+    .venv\Scripts\activate
+    ```
+
+### 5.4. Installing Dependencies
+Install the required testing framework, `pytest`. No other external packages are needed since the `cerberus` module being tested is bundled locally inside the project:
+```bash
+pip install pytest
+```
+
+### 5.5. Running Clean Unit Tests
+Run the entire suite of 105 clean unit tests written by our team members to verify they all pass:
+```bash
+pytest tests/ -v
+```
+
+### 5.6. Running the Mutation Testing Suite
+Run the automated runner to sequentially apply the 45 logical mutants and verify that they are caught (killed) by the tests:
+```bash
+python faults/run_mutants.py
+```
+*(The runner automatically backs up the original code, applies each mutant, executes the target test, restores the clean code, and outputs a summary report).*
+
+### 5.7. Running a Specific Mutant
+To run and test a single mutant in isolation:
+```bash
+python faults/run_mutants.py F1-1
+```
+
+---
